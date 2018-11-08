@@ -11,9 +11,13 @@ public class SalesforceTests {
 		ChromeDriver driver = new ChromeDriver(); 
 		
 		driver.get("http://login.salesforce.com"); //Hit url on browser
-		driver.findElement(By.id("username")).sendKeys("aaa");
-		driver.findElement(By.name("pw")).sendKeys("123123");
-		driver.findElement(By.className("button r4 wide primary")).click(); //Error. Compound class names not permitted
+		//driver.findElement(By.id("username")).sendKeys("aaa");
+		//driver.findElement(By.name("pw")).sendKeys("123123");
+		driver.findElement(By.cssSelector("#username")).sendKeys("aaa");
+		driver.findElement(By.xpath("//*[@id=\'password\']")).sendKeys("123123");
+		
+		//driver.findElement(By.className("button r4 wide primary")).click(); //Error. Compound class names not permitted. Ar tukðumzîmçm nav pieïaujams
+		driver.findElement(By.xpath("//*[@id=\'Login\']")).click(); //Dubultâs pçdiòas iekð dubultâm pçdiòâm jâmaina uz ''
 		System.out.println(driver.getTitle()); //Validate if page title is correct
 		System.out.println(driver.getCurrentUrl()); //Validate if link is correct
 		//System.out.println(driver.getPageSource()); //Print page source
