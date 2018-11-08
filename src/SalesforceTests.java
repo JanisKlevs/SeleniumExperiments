@@ -20,6 +20,7 @@ public class SalesforceTests {
 		driver.findElement(By.xpath("//*[@id=\'Login\']")).click(); //Dubultâs pçdiòas iekð dubultâm pçdiòâm jâmaina uz ''
 		System.out.println(driver.getTitle()); //Validate if page title is correct
 		System.out.println(driver.getCurrentUrl()); //Validate if link is correct
+		System.out.println(driver.findElement(By.cssSelector("div#error.loginError")).getText());
 		//System.out.println(driver.getPageSource()); //Print page source
 		//driver.navigate().to("http://yahoo.com");
 		//driver.navigate().back();

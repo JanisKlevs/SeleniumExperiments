@@ -20,10 +20,12 @@ public class ChromeSelectors {
 		//driver.findElement(By.linkText("Forgot password?")).click();
 		System.out.println(driver.getTitle()); //Validate if page title is correct
 		System.out.println(driver.getCurrentUrl()); //Validate if link is correct
+		//$x("") to check xpath in firefox/chrome console
+		//$("") to check cssselector in firefox/chrome console
 		//System.out.println(driver.getPageSource()); //Print page source
 		//driver.navigate().to("http://yahoo.com");
 		//driver.navigate().back();
-		//driver.close(); //closes current browser
+		driver.close(); //closes current browser
 		//driver.quit(); // It closes all the browsers opened by selenium script
 	}
 
