@@ -11,6 +11,7 @@ public class rediff {
 		ChromeDriver driver = new ChromeDriver(); 
 		
 		driver.get("http://rediff.com"); //Hit url on browser
+		driver.manage().window().maximize();
 		driver.findElement(By.cssSelector("a[title*='Sign in'")).click();
 		driver.findElement(By.xpath("//input[@id='login1']")).sendKeys("user");
 		driver.findElement(By.cssSelector("input#password")).sendKeys("password");
