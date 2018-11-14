@@ -57,6 +57,7 @@ public class Dropdown {
 	
 	System.out.println(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
 	driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
+	
 	//ctl00_mainContent_chk_friendsandfamily
 	System.out.println(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
 	
