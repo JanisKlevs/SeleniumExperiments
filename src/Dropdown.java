@@ -19,7 +19,7 @@ public class Dropdown {
 	System.out.println(selectedItem );
 	//Assert.assertEquals("Feb", selectedItem);
 	try {
-		   Thread.sleep(5000);
+		   Thread.sleep(1000);
 		} catch (InterruptedException e) {
 		   e.printStackTrace();
 		}
@@ -28,7 +28,7 @@ public class Dropdown {
 	String selectedItem2 = option2.getText();
 	System.out.println(selectedItem2 );
 	try {
-		   Thread.sleep(5000);
+		   Thread.sleep(1000);
 		} catch (InterruptedException e) {
 		   e.printStackTrace();
 		}
@@ -55,6 +55,7 @@ public class Dropdown {
 		   e.printStackTrace();
 		}
 	
+	//can validate checkbox with this method
 	System.out.println(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
 	driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
 	
